@@ -1,0 +1,118 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.photo {
+  background-image: url("/public/asha.jpg");
+  height: 45vh;
+  width: 20%;
+  border-radius: 50%;
+  background-size: cover;
+  margin-left: 85vh; /* Keep as is */
+  margin-top: -5vh; /* Keep as is */
+  border: 20px solid rgb(197, 191, 191);
+  box-shadow: 0 0 100px rgb(22, 20, 20);
+}
+
+.name h2 {
+  margin-top: 7vh;
+  display: flex;
+  align-items: center;
+  margin-left: 5vh;
+}
+
+.ad-line {
+  margin-top: 10px; /* Adjusted */
+  margin-left: -3vh; /* Keep as is */
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-left: -70vh; /* Adjusted */
+  margin-top: -15vh;
+}
+
+.about {
+  background-color: rgba(219, 7, 7, 0.726);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 20vh; /* Keep as is */
+  margin-top: 10vh; /* Keep as is */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.about-me-content {
+  border: 1px solid rgba(219, 7, 7, 0.726);
+  margin-left: 20vh; /* Keep as is */
+  max-width: 45%; /* Adjusted */
+  height: auto; /* Changed */
+  padding: 20px;
+  margin-top: -4vh;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+}
+
+.details {
+  width: 60%; /* Adjusted */
+  max-width: 600px; /* Added */
+  display: flex;
+  flex-direction: column;
+  margin-top: -10vh; /* Adjusted */
+}
+
+.line {
+  margin-right: 20px; /* Adjusted */
+}
+
+.bio-data {
+  margin-top: -13vh; /* Adjusted */
+}
+
+.bio-data p {
+  margin-bottom: 10px; /* Adjusted */
+}
+
+/* Media queries for different screen sizes */
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  .name,
+  .desc {
+    margin-left: 0; /* Adjusted */
+  }
+}
+
+/* Tablets, iPads (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .name,
+  .desc {
+    margin-left: 0; /* Adjusted */
+  }
+}
+
+/* Laptops, desktops */
+@media only screen and (min-width: 1024px) {
+  .name,
+  .desc {
+    margin-left: 90vh; /* Keep as is */
+  }
+}
